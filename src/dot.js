@@ -12,7 +12,7 @@ export const verticalStyle = `
     width: 10px;
     height: 10px;
     margin: 3px;
-    background-color: #3498db;
+    background-color: black;
     border-radius: 50%;
     animation: bounce 1s infinite alternate;
   }

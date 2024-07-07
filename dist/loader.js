@@ -1,5 +1,6 @@
+import { createFlip, flipStyle } from "../src/flipBox.js";
 import { spinnerStyle, createSpinner } from "../src/spinner.js";
-import { verticalStyle, createVertical } from "../src/vertical.js";
+import { verticalStyle, createVertical } from "../src/dot.js";
 
 class Loader extends HTMLElement {
   static get observedAttributes() {
@@ -23,9 +24,13 @@ class Loader extends HTMLElement {
       shadow.appendChild(spinner)
 
      }
-     else if(type === 'vertical'){
+     else if(type === 'dot'){
      style.textContent = `${verticalStyle}`;
      shadow.appendChild(createVertical())
+     }
+     else if(type === 'flip'){
+      style.textContent = `${flipStyle}`;
+      shadow.appendChild(createFlip())
      }
      
       
