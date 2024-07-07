@@ -1,10 +1,12 @@
 export const verticalStyle = `
   .vertical {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+    // justify-content: center;
     align-items: center;
-    height: 100vh;
+    // height: 100vh;
+    // background-color:green;
+    width:;
   }
   .vertical div {
     width: 10px;
